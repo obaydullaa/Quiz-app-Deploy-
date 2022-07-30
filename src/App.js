@@ -41,7 +41,7 @@ function App() {
   }
 
   const fetchQuiz = async () => {
-    const res = await fetch('https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple')
+    const res = await fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple')
       const {results} = await res.json();
       setQuizzes(results)
       setLoaded(true)
