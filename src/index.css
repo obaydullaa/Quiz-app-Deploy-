@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 500px;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+  padding: 30px;
+  box-shadow: 0px 0px 25px #EBEBF4;
+}
+
+button {
+  background: bisque;
+  border: 0;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transform: .3s;
+  margin-top: 15px;
+}
+button:hover {
+  background: rgb(218, 186, 148);
+}
+ /* Dynamic Class */
+.correct-answer {
+  background-color: chartreuse !important;
+}
+
+.incorrect-answer {
+  background-color: brown !important;
+  color: #fff !important;
+}
+.disabled-answer {
+  pointer-events: none;
+}
+
+.question-card .quiz-answer {
+  background: transparent;
+  cursor: pointer;
+  transition: all ease-out .3s;
+  padding: 8px 0;
+  line-height: 1.1;
+  margin: 5px 0;
+  font-size: 17px;
+}
+.question-card .quiz-answer:hover {
+  background: antiquewhite;
+}
+
+h4.question {
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  transition: all ease-out .3s;
+  padding: 5px 0;
+  line-height: 1.1;
+  margin: 5px 0;
+  font-weight: 500;
+}
